@@ -3,6 +3,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <main className="homepage-bg min-h-screen flex flex-col items-center justify-center px-4 py-12">
+      {/* CauseMap - Interactive 3D/2D Historical Events Visualization */}
       <header className="homepage-header text-center mb-12 animate-fadeIn">
         <h1 className="homepage-title">CauseMap</h1>
         <h2 className="homepage-subtitle">Visualize causes. Understand history.</h2>
