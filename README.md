@@ -1,60 +1,81 @@
-<h1 align="center">🧠 CauseMap / Причинология</h1>
-<p align="center">
-  <img src="https://raw.githubusercontent.com/z0lga-prichinologia/CauseMAP/main/public/banner.png" alt="CauseMap Banner" width="100%" />
-</p>
+# CauseMap
 
-> 🌐 A visual, explorable network of interconnected global events — political, economic, environmental, and technological — built to help users understand the true causes behind complex developments in history and our modern world.
+An interactive 3D/2D visualization platform for historical events and their causal relationships.
 
----
+## Features
 
-### 🎯 Mission
+- **3D Event Cloud**: Interactive 3D visualization showing historical events as nodes
+- **2D Connection View**: Detailed 2D view showing causal relationships between events
+- **Category Filtering**: Filter events by categories (Politics, Economy, Military, etc.)
+- **Time Period Filtering**: Filter events by historical periods
+- **Search Functionality**: Search for specific events
+- **Responsive Design**: Works on desktop and mobile devices
 
-> To reveal the deeper logic of global events by showing not only what happened — but **why** it happened, and how everything is connected.
+## Technology Stack
 
----
+- **Frontend**: Next.js 14, React 18
+- **3D Visualization**: react-force-graph-3d, Three.js
+- **2D Visualization**: react-force-graph-2d
+- **Styling**: CSS-in-JS with custom utility classes
+- **Deployment**: Vercel
 
-### ✨ Features
+## Getting Started
 
-- 🧩 Interactive node-based map of world events
-- 🟠 Node types: political, economic, tech, natural disasters, etc.
-- 📚 AI-generated summaries & causal explanations
-- 🧪 **Beta interface preview**: [`/beta`](https://causemap.vercel.app/beta)
+### Prerequisites
 
----
+- Node.js 18+ 
+- npm or yarn
 
-### 🛠 Stack
+### Installation
 
-- ⚛️ React / Next.js
-- 🎯 Vercel / Dora-ready
-- 🧠 AI-integration ready
-- 🎨 Pure CSS + SVG (canvas-free prototype)
+1. Clone the repository:
+```bash
+git clone https://github.com/z0lga-prichinologia/prichinologiya.git
+cd prichinologiya
+```
 
----
+2. Install dependencies:
+```bash
+npm install
+```
 
-### 🧪 Sneak Peek
+3. Run the development server:
+```bash
+npm run dev
+```
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/z0lga-prichinologia/CauseMAP/main/public/preview.png" alt="CauseMap Demo Preview" width="80%" />
-</p>
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
----
+### Available Scripts
 
-### 📍 In Development
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
 
-- 🌍 Full 3D globe/graph engine
-- 🤖 AI Assistant for causal prediction
-- 🧠 Data aggregation from public APIs, Wikidata, archival sources
-- 🎧 Sound design for immersive experience
+## Project Structure
 
----
+```
+├── pages/           # Next.js pages
+│   ├── graph.js     # Main graph visualization
+│   ├── index.js     # Homepage
+│   └── api/         # API routes
+├── components/      # React components
+├── data/           # Data files and categories
+├── styles/         # Global CSS styles
+└── public/         # Static assets
+```
 
-### 👩‍💻 Created by
+## Live Demo
 
-**Olga Zakharova** — designer & visionary  
-_Assisted by AI and guided by curiosity._
+Visit the live application: [prichinologiya.vercel.app](https://prichinologiya.vercel.app)
 
----
+## Contributing
 
-### 🌐 License
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-[MIT License](./LICENSE)
+## License
+
+This project is licensed under the MIT License.
